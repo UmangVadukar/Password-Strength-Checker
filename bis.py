@@ -60,7 +60,7 @@ class PasswordAnalyzer:
         if charset_size == 0:
             charset_size = 1  # Prevent log(0)
         
-        entropy = len(password) * math.log2(math.pow(charset_size,len(password)))
+        entropy = math.log2(math.pow(charset_size,len(password)))
         return entropy
 
     def check_common_patterns(self, password: str) -> List[str]:
@@ -184,9 +184,6 @@ def main():
             help="Your password is not stored or transmitted anywhere"
         )
         
-        show_password = st.checkbox("Show password")
-        if show_password and password:
-            st.code(password)
     
     with col2:
         st.markdown("### Quick Tips")

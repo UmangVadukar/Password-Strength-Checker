@@ -57,6 +57,6 @@ git clone https://github.com/UmangVadukar/Password-Strength-Checker.git
 ```
 ## 📸 App Screenshot
 
-![Password Strength Checker UI](BisIMg.png)
+![Password Strength Checker UI](BisImg.png)
 
 
